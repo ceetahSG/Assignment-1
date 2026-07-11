@@ -19,6 +19,29 @@ button {
     font-size: 16px;
 }
 
+.button-outline {
+    border-radius: 12px;
+    color: #1D4ED8;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 12px 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border: solid 1px #1D4ED8;
+}
+.button-outline-black{
+    border-radius: 12px;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 12px 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border: solid 1px black;
+
+}
 nav {
     margin: 0 auto;
     padding: 16px 0;
@@ -140,4 +163,100 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+}
+
+.pricing {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.pricing .pricing-title {
+    color: #0D1B2A;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.pricing .pricing-description {
+    color: #575757;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.price-card-header {
+    text-align: left;
+    /* border:solid 2px red; */
+    margin-bottom: 40px;
+
+}
+
+.price-card-header h3 {
+    font-size: 13;
+    font-weight: semi-bold;
+    color: #888888;
+}
+
+.price-card-header h2 {
+    font-size: 44px;
+    font-weight: bold;
+    color: #0D1B2A;
+}
+
+.price-card-header p {
+    font-size: 13px;
+    font-weight: regular;
+    color: #888888;
+}
+
+.price-card {
+    border: solid 1px #E5E7EB;
+    border-radius: 12px;
+    text-align: left;
+    width: 370px;
+    padding: 32px;
+}
+
+.price-card li {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: regular;
+
+}
+
+.price-card button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.pro {
+    background-color: #0D1B2A;
+}
+
+.pro .price-card-header h3 {
+    color: #93C5FD;
+}
+
+.pro .price-card-header h2 {
+    color: white;
+
+}
+
+.pro .price-card-header p {
+    opacity: 0.5;
+}
+
+.pro ul li {
+    color: white;
+    opacity: 0.8;
+}
+
+li::marker {
+    color: #2563EB;
 }

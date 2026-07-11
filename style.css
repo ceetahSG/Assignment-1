@@ -1,11 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;
 }
 
 .container {
     max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 button {
@@ -42,6 +45,9 @@ button {
     border: solid 1px black;
 
 }
+button:hover{
+    opacity:.9;
+}
 nav {
     margin: 0 auto;
     padding: 16px 0;
@@ -62,14 +68,21 @@ nav ul li a {
     color: #575757;
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    font-weight: regular;
+    font-weight: 400;
 }
 
 .hero {
     position: relative;
     text-align: center;
-    padding: 60px 0;
+   padding:120px 0 220px;
     color: white;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
 }
 
 .hero h1 {
@@ -80,8 +93,7 @@ nav ul li a {
 
 .hero p {
     font-size: 22px;
-    font-weight: regular;
-    margin-bottom: 500px;
+    font-weight: 400;
     max-width: 800px;
     margin: 0 auto 500px;
 }
@@ -107,7 +119,7 @@ nav ul li a {
     z-index: 1;
 }
 
-span {
+.hero span {
     font-style: italic;
 }
 
@@ -131,15 +143,20 @@ span {
 
 .card {
     border: solid 1px #E5E7EB;
-    max-width: 644px;
+    width:100%;
     text-align: left;
     border-radius: 12px;
+    overflow: hidden;
 
+}
+.card img{
+    width:100%;
+    display:block;
 }
 
 .card h3 {
     font-size: 12px;
-    font-weight: semi-bold;
+    font-weight: 600;
     color: #2563EB;
     margin: 15px;
 }
@@ -153,7 +170,7 @@ span {
 
 .card p {
     font-size: 14px;
-    font-weight: regular;
+    font-weight: 400;
     color: #575757;
     margin: 15px;
     margin-bottom: 25px;
@@ -184,14 +201,13 @@ span {
 
 .price-card-header {
     text-align: left;
-    /* border:solid 2px red; */
     margin-bottom: 40px;
 
 }
 
 .price-card-header h3 {
     font-size: 13px;
-    font-weight: semi-bold;
+    font-weight: 600;
     color: #888888;
 }
 
@@ -203,7 +219,7 @@ span {
 
 .price-card-header p {
     font-size: 13px;
-    font-weight: regular;
+    font-weight: 400;
     color: #888888;
 }
 
@@ -211,8 +227,9 @@ span {
     border: solid 1px #E5E7EB;
     border-radius: 12px;
     text-align: left;
-    width: 370px;
+    flex: 1;
     padding: 32px;
+    
 }
 
 .price-card li {
@@ -220,7 +237,7 @@ span {
     margin-left: 20px;
     color: #333333;
     font-size: 14px;
-    font-weight: regular;
+    font-weight: 400;
 
 }
 
@@ -351,13 +368,13 @@ footer{
     margin-left:300px;
     opacity:0.4;
     font-size:16px;
-    font-weight:regular;
+    font-weight:400;
 }
 .footer-right{
     display:flex;
     gap:20px;
     font-size:16px;
-    font-weight:regular;
+    font-weight:400;
     margin-right:300px;
     opacity:0.4;
 }
